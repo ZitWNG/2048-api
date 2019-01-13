@@ -16,7 +16,9 @@ if __name__ == '__main__':
 
     '''====================
     Use your own agent here.'''
-    from zitagent import ZitAgent as TestAgent
+    #from game2048.agents import ExpectiMaxAgent as TestAgent
+    from game2048.agents import ZitAgent as TestAgent
+    # from zit_agent import ZitAgent as TestAgent
     '''===================='''
 
     scores = []
@@ -26,3 +28,4 @@ if __name__ == '__main__':
         scores.append(score)
 
     print("Average scores: @%s times" % N_TESTS, sum(scores) / len(scores))
+
