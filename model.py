@@ -106,7 +106,7 @@ zit_model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['acc
 
 zit_model.summary()
 
-_val_data, _val_label = generate_val_dataset(data_path, 7085)
+_val_data, _val_label = generate_val_dataset(data_path, 7084)
 val_data_, val_label_ = generate_val_dataset(data_path, 7085)
 
 val_data = np.vstack((_val_data, val_data_))
