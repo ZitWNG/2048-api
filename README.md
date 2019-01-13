@@ -4,7 +4,7 @@
 
 * /model0002.h5，是我运行的agent中使用的模型
 
-* /game2048/agents.py 在保留原来agents.py不变的基础上，增加了ZitAgent（我的agent）
+* /game2048/agents.py 在保留原来agents.py不变的基础上，增加了我的agent（ZitAgent）
 
 * /evaulate.py 在原来的基础上，仅将调用expectimaxagent改成我的agent（ZitAgent）
 
@@ -40,7 +40,7 @@
           load_path = os.path.join(data_path, 'new_cnn_dataset_'+str(count)+'.npz')
           # line 52
 
-          _val_data, _val_label = generate_val_dataset(data_path, 7085)
+          _val_data, _val_label = generate_val_dataset(data_path, 7084)
           val_data_, val_label_ = generate_val_dataset(data_path, 7085)
           # line 118
       ```
@@ -187,12 +187,12 @@
     https://blog.csdn.net/senjie_wang/article/details/82708381
     https://github.com/Jason33Wang/ReinforcementLearning_by_keras
 
-  * [dqn_baseon_others.py]()：从git上找的另外一个大佬的dqn，使用tensorflow
-  的框架，大佬在他的代码里能跑到20000+（折合下来应该有2400多）
+  * [dqn_baseon_others.py]()：从git上找的开源dqn，使用tensorflow
+  的框架，这份代码里能跑到20000+（折合下来应该有2400多）
 
-    代码连接：https://github.com/xdavidwu/2048-dqn
-    但是难度和我们这个游戏不同，他随机0.1的概率生成是4，
-    而我们是0.5的概率是4。
+    代码链接：https://github.com/xdavidwu/2048-dqn
+    但是难度和我们这个游戏不同，他生成4的概率是0.1，
+    而我们是0.5。
 
       这篇代码主要是将我们的游戏接入了这个dqn框架，并未做很大的修改，
       但自己改写了能够生成score（按合并的数字总和）的模块。
