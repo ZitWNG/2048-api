@@ -19,9 +19,12 @@
 ## 代码结构：
   * model.py:
         * 1.scheduler是lr随着epoch下降的优化
+        
         * 2.generate开头的两个函数分别是读取训练集（生成器），验证集（返回
         一个数组），读取范围为全局游戏
+
         * 3.从73行from keras.models import Sequential开始是神经网络模型
+        
         * 4.从133行acc=history.history['acc']开始是acc和loss的训练过程图
 
 ## 运行方式：
